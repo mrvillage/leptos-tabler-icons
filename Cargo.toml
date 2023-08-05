@@ -1,0 +1,11 @@
+[package]
+name = "leptos-tabler-icons"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+leptos = { version = "0.4.8", features = ["nightly"] }
+
+[build-dependencies]
+include_dir = "0.7.3"
+regex = "1.9.1"
