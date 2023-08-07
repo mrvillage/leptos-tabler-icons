@@ -8,6 +8,7 @@ pub use icons::Icons;
 pub fn Icon<OC>(
     cx: Scope,
     icon: MaybeSignal<Icons>,
+    #[prop(default = MaybeSignal::Static("".into()))] class: MaybeSignal<String>,
     #[prop(default = MaybeSignal::Static(24))] size: MaybeSignal<u16>,
     #[prop(default = MaybeSignal::Static(2))] stroke_width: MaybeSignal<u16>,
     #[prop(default = MaybeSignal::Static("currentColor".into()))] stroke: MaybeSignal<String>,
@@ -25,12 +26,12 @@ where
         }
     };
     let icon = icon.derive_signal(cx);
-    let class_ = move || format!("icon icon-tabler icon-tabler-{}", icon());
+    let class = move || format!("icon icon-tabler icon-tabler-{} {}", icon(), class());
     let href = move || format!("/icons/{}.svg#{}", icon(), icon());
     view! {cx,
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            class=class_
+            class=class
             width=size
             height=size
             viewBox="0 0 24 24"
