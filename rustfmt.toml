@@ -65,7 +65,6 @@ use_field_init_shorthand = true
 force_explicit_abi = true
 condense_wildcard_suffixes = true
 color = "Auto"
-required_version = "1.5.1"
 unstable_features = false
 disable_all_formatting = false
 skip_children = false
@@ -75,4 +74,3 @@ error_on_unformatted = false
 ignore = []
 emit_mode = "Files"
 make_backup = false
-

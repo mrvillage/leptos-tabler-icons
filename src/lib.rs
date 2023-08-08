@@ -1,8 +1,16 @@
 mod icons;
 
 pub use icons::Icons;
-
-    use leptos::{component, ev::MouseEvent, view, IntoView, Scope, MaybeSignal, IntoAttribute, IntoSignal};
+use leptos::{
+    component,
+    ev::MouseEvent,
+    view,
+    IntoAttribute,
+    IntoSignal,
+    IntoView,
+    MaybeSignal,
+    Scope,
+};
 
 #[component]
 pub fn Icon<OC>(
@@ -46,4 +54,3 @@ where
         </svg>
     }
 }
-
