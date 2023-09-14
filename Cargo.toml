@@ -6,8 +6,10 @@ license = "MIT"
 description = "Tabler Icons for Leptos"
 repository = "https://github.com/mrvillage/leptos-tabler-icons"
 
-[dependencies]
-leptos = { version = "0.4.8", features = ["nightly"] }
+[dependencies.leptos]
+git = "https://github.com/leptos-rs/leptos.git"
+branch = "main"
+features = ["rustls", "serde", "nightly"]
 
 [build-dependencies]
 include_dir = "0.7.3"
