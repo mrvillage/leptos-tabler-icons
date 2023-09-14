@@ -34,7 +34,6 @@ pub fn Icon(
             stroke_linejoin=stroke_linejoin
             inner_html=move || icon().svg()
         >
-            <use_ href=href />
         </svg>
     }
 }
