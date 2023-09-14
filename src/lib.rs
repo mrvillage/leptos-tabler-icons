@@ -5,7 +5,7 @@ use leptos::{component, view, IntoAttribute, IntoSignal, IntoView, MaybeSignal};
 
 #[component]
 pub fn Icon(
-    icon: MaybeSignal<Icons>,
+    #[prop(into)] icon: MaybeSignal<Icons>,
     #[prop(into, default = MaybeSignal::Static("".into()))] class: MaybeSignal<String>,
     #[prop(into, default = MaybeSignal::Static(24))] size: MaybeSignal<u16>,
     #[prop(into, default = MaybeSignal::Static(2))] stroke_width: MaybeSignal<u16>,
