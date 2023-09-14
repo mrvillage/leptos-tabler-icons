@@ -1,7 +1,7 @@
 mod icons;
 
 pub use icons::Icons;
-use leptos::{component, ev::MouseEvent, view, IntoAttribute, IntoSignal, IntoView, MaybeSignal};
+use leptos::{component, view, IntoAttribute, IntoSignal, IntoView, MaybeSignal};
 
 #[component]
 pub fn Icon(
