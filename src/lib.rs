@@ -20,7 +20,6 @@ pub fn Icon(
 ) -> impl IntoView {
     let icon = icon.into_signal();
     let class = move || format!("icon icon-tabler icon-tabler-{} {}", icon(), class());
-    let href = move || format!("/icons/{}.svg#{}", icon(), icon());
     view! {
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -33,6 +32,7 @@ pub fn Icon(
             fill=fill
             stroke-linecap=stroke_linecap
             stroke_linejoin=stroke_linejoin
+            inner_html=move || icon().svg()
         >
             <use_ href=href />
         </svg>
