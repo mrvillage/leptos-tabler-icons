@@ -6,6 +6,9 @@ license = "MIT"
 description = "Tabler Icons for Leptos"
 repository = "https://github.com/mrvillage/leptos-tabler-icons"
 
+[dependencies]
+tracing = "0.1"
+
 [dependencies.leptos]
 git = "https://github.com/leptos-rs/leptos.git"
 branch = "main"
