@@ -1,6 +1,6 @@
 mod icons;
 
-pub use icons::Icons;
+pub use icons::{Icons, Icons::*};
 use leptos::{component, view, IntoAttribute, IntoSignal, IntoView, MaybeSignal};
 
 #[component]
