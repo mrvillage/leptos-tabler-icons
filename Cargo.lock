@@ -788,6 +788,7 @@ dependencies = [
  "include_dir",
  "leptos",
  "regex",
+ "tracing",
 ]
 
 [[package]]
