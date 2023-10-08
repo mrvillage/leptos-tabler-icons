@@ -45,26 +45,38 @@ fn main() {
         .join("");
     let names = files
         .iter()
-        .map(|(n, e, _)| format!(r#"
+        .map(|(n, e, _)| {
+            format!(
+                r#"
         #[cfg(feature = "Icon{e}")]
         Icons::Icon{e} => write!(f, "{n}"),
-        "#))
+        "#
+            )
+        })
         .collect::<Vec<String>>()
         .join("");
     let froms = files
         .iter()
-        .map(|(n, e, _)| format!(r#"
+        .map(|(n, e, _)| {
+            format!(
+                r#"
         #[cfg(feature = "Icon{e}")]
         "{n}" => Ok(Icons::Icon{e}),
-        "#))
+        "#
+            )
+        })
         .collect::<Vec<String>>()
         .join("");
     let svgs = files
         .iter()
-        .map(|(_, e, s)| format!(r###"
+        .map(|(_, e, s)| {
+            format!(
+                r###"
         #[cfg(feature = "Icon{e}")]
         Icons::Icon{e} => r##"{s}"##,
-        "###))
+        "###
+            )
+        })
         .collect::<Vec<String>>()
         .join("");
     let features = files
@@ -87,8 +99,7 @@ repository = "https://github.com/mrvillage/leptos-tabler-icons"
 tracing = "0.1"
 
 [dependencies.leptos]
-git = "https://github.com/leptos-rs/leptos.git"
-branch = "main"
+version = "0.5"
 features = ["rustls", "serde", "nightly"]
 
 [build-dependencies]
@@ -96,7 +107,7 @@ include_dir = "0.7.3"
 regex = "1.9.1"
 
 [features]
-default = []
+default = ["Icon123"]
 
 {features}
             "##,
