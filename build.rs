@@ -109,8 +109,7 @@ regex = "1.9.1"
 [features]
 default = ["Icon123"]
 
-{features}
-            "##,
+{features}"##,
         ),
     )
     .unwrap();
