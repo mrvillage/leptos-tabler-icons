@@ -3,6 +3,7 @@
 <!-- next-header -->
 
 ## [Unreleased] - ReleaseDate
+- Migrate to using feature flags to tailor builds for only specific icons.
 
 ## [0.1.1] - 2023-08-07
 
