@@ -10,8 +10,7 @@ repository = "https://github.com/mrvillage/leptos-tabler-icons"
 tracing = "0.1"
 
 [dependencies.leptos]
-git = "https://github.com/leptos-rs/leptos.git"
-branch = "main"
+version = "0.5"
 features = ["rustls", "serde", "nightly"]
 
 [build-dependencies]
@@ -4622,4 +4621,3 @@ IconZoomReplace = []
 IconZoomReset = []
 IconZzzOff = []
 IconZzz = []
-            
