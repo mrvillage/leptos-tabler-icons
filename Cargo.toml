@@ -18,7 +18,7 @@ include_dir = "0.7.3"
 regex = "1.9.1"
 
 [features]
-default = []
+default = ["Icon123"]
 
 Icon123 = []
 Icon24Hours = []
@@ -4621,3 +4621,4 @@ IconZoomReplace = []
 IconZoomReset = []
 IconZzzOff = []
 IconZzz = []
+
