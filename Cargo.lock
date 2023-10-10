@@ -733,7 +733,7 @@ dependencies = [
 
 [[package]]
 name = "leptos-tabler-icons"
-version = "0.2.2"
+version = "0.2.3"
 dependencies = [
  "include_dir",
  "leptos",
